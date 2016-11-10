@@ -1,0 +1,11 @@
+
+platform :ios, ‘8.0’
+use_frameworks!
+target ’WeChat’ do
+
+
+
+pod 'MBProgressHUD', '~> 0.9.2'
+
+
+end

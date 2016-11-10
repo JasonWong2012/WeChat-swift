@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4zd-O8-L8o">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvv-6n-xh1">
+                    <rect key="frame" x="280" y="9" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="oBC-NP-raG"/>
+                        <constraint firstAttribute="height" constant="32" id="w9a-Ck-nB5"/>
+                    </constraints>
+                    <state key="normal" image="add"/>
+                </button>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sev-V7-Lti">
+                    <rect key="frame" x="8" y="9" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="frB-JK-SDo"/>
+                        <constraint firstAttribute="width" constant="32" id="jVd-ff-Ats"/>
+                    </constraints>
+                    <state key="normal" image="voice"/>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QWO-fC-uFg">
+                    <rect key="frame" x="48" y="5" width="184" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Imj-aw-3xv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nab-od-vdV">
+                    <rect key="frame" x="240" y="9" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="4EB-So-ci5"/>
+                        <constraint firstAttribute="height" constant="32" id="Avh-KB-HXk"/>
+                    </constraints>
+                    <state key="normal" image="face"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Nab-od-vdV" firstAttribute="centerY" secondItem="4zd-O8-L8o" secondAttribute="centerY" id="6uf-eW-bgV"/>
+                <constraint firstItem="QWO-fC-uFg" firstAttribute="leading" secondItem="sev-V7-Lti" secondAttribute="trailing" constant="8" id="MaH-Mw-4S7"/>
+                <constraint firstAttribute="trailing" secondItem="uvv-6n-xh1" secondAttribute="trailing" constant="8" id="OQj-q1-c5V"/>
+                <constraint firstItem="uvv-6n-xh1" firstAttribute="leading" secondItem="Nab-od-vdV" secondAttribute="trailing" constant="8" id="V7j-W1-R5w"/>
+                <constraint firstItem="Nab-od-vdV" firstAttribute="leading" secondItem="QWO-fC-uFg" secondAttribute="trailing" constant="8" id="X3S-ZX-had"/>
+                <constraint firstItem="QWO-fC-uFg" firstAttribute="centerY" secondItem="4zd-O8-L8o" secondAttribute="centerY" id="hma-cW-haD"/>
+                <constraint firstItem="sev-V7-Lti" firstAttribute="centerY" secondItem="4zd-O8-L8o" secondAttribute="centerY" id="hqm-rm-IfG"/>
+                <constraint firstItem="sev-V7-Lti" firstAttribute="leading" secondItem="4zd-O8-L8o" secondAttribute="leading" constant="8" id="lpV-g0-6kD"/>
+                <constraint firstItem="uvv-6n-xh1" firstAttribute="centerY" secondItem="4zd-O8-L8o" secondAttribute="centerY" id="m2B-iS-7Dp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-61" y="200"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add" width="28" height="28"/>
+        <image name="face" width="30" height="30"/>
+        <image name="voice" width="28" height="28"/>
+    </resources>
+</document>
